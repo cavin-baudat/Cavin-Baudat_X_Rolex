@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - MainLight
+  - CinemachineTarget
+  - ScreenCamera
+  - cockpit_capitalLaser
+  - aiguille_m
+  - aiguille_s
+  - rouage_1
+  - rouage_2
+  - rouage_7
+  - rouage_3
+  - rouage_5
+  - rouage_4
+  - echappement
+  - Balancier_Part_Sup
+  - Balancier
+  - aiguille_h
+  - Cylindre_Boitier_Inf
+  - Cylindre_Boitier_Sup
+  - Cylindre_Spirale
+  - Balancier_Spirale
+  - rouage_8
+  - rouage_6
+  - vis
+  - Deletable
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Temp_Post
+  - Water
+  - UI
+  - Terminal
+  - Location
+  - LookInteractor
+  - Screen
+  - Occluder
+  - Camera
+  - MainCameraOnly
+  - WorldMesh
+  - AssemblyLocked
+  - AssemblyUndone
+  - LoupeOverlay
+  - loupeVisible
+  - 
+  - 
+  - Cockpit
+  - Cockpit_3DSkybox
+  - Cockpit_3DSkybox_BG
+  - Cockpit_Ally
+  - Cockpit_Invader
+  - Cockpit_BG
+  - Cockpit_DepthClear
+  - watch
+  - draggable
+  - UIInteraction
+  - grab
+  - teleportation
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

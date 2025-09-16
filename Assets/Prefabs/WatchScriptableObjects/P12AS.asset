@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f9359aadba410143bea274a77671599, type: 3}
+  m_Name: P12AS
+  m_EditorClassIdentifier: 
+  stepId: P12
+  debugOrderIndex: 12
+  physicalPrefab: {fileID: 0}
+  ghostPrefab: {fileID: 0}
+  ghostMaterial: {fileID: 2100000, guid: ce295405168f4324ebc81f8586b567d9, type: 2}
+  ghostValidMaterial: {fileID: 2100000, guid: 8594cfa6d5565c547aa3d3bc6ec61a6f, type: 2}
+  targetLocalPosition: {x: 0.051642105, y: 0.0062604127, z: -0.0037811664}
+  targetLocalEuler: {x: 0, y: 0, z: 0}
+  positionTolerance: 0.004
+  rotationToleranceDeg: 10
+  stableFramesRequired: 2
+  alternativeEulerOffsets: []
+  freeYaw: 0
+  freePitch: 1
+  freeRoll: 0
+  allowUndo: 0
