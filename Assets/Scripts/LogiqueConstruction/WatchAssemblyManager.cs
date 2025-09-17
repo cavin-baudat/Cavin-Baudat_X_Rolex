@@ -80,6 +80,9 @@ public class WatchAssemblyManager : MonoBehaviour
     int undoneRayLayer = -1;
     int ghostLayer = -1;
 
+    // Epsilon numerique pour l'erreur de rotation quand axes libres
+    const float RotationEpsilonDeg = 0.1f;
+
     // === Nouveaux acces / evenement pour les bacs ===
     public System.Action AssemblyStateChanged;
     public IReadOnlyList<AssemblyPiece> AllPieces => allPieces;
@@ -484,7 +487,13 @@ public class WatchAssemblyManager : MonoBehaviour
         }
 
         bool okPos = posErr <= currentStep.positionTolerance;
-        bool okRot = bestAngle <= currentStep.rotationToleranceDeg;
+
+        // Important: si des axes sont libres, utiliser un epsilon minimal pour compenser le bruit
+        float rotTolDeg = currentStep.rotationToleranceDeg;
+        if (currentStep.freeYaw || currentStep.freePitch || currentStep.freeRoll)
+            rotTolDeg = Mathf.Max(rotTolDeg, RotationEpsilonDeg);
+
+        bool okRot = bestAngle <= rotTolDeg;
 
         if (okPos && okRot)
         {
@@ -509,6 +518,10 @@ public class WatchAssemblyManager : MonoBehaviour
 
     float RotationErrorConsideringFreeAxes(Quaternion target, Quaternion current, WatchAssemblyStep step)
     {
+        // Si tous les axes sont libres, la rotation est ignoree
+        if (step.freeYaw && step.freePitch && step.freeRoll)
+            return 0f;
+
         Quaternion delta = Quaternion.Inverse(target) * current;
         delta = NormalizeQuaternion(delta);
 
@@ -516,7 +529,10 @@ public class WatchAssemblyManager : MonoBehaviour
         if (step.freePitch) delta = RemoveTwistQuaternion(delta, Vector3.right);
         if (step.freeRoll) delta = RemoveTwistQuaternion(delta, Vector3.forward);
 
-        return Quaternion.Angle(Quaternion.identity, delta);
+        float ang = Quaternion.Angle(Quaternion.identity, delta);
+        // Nettoyage du bruit numerique
+        if (ang < 1e-3f) ang = 0f;
+        return ang;
     }
 
     Quaternion RemoveTwistQuaternion(Quaternion q, Vector3 axis)

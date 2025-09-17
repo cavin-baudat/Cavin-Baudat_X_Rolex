@@ -9,6 +9,7 @@ public class LoupeManager : MonoBehaviour
     public Transform loupeObject;        // grabbable loupe (quad/disc center)
     public RenderTexture loupeRT;        // RT assigned to the loupe material (ARGB32)
     public MeshRenderer loupeRenderer;   // renderer of the quad/disc that shows the RT
+    public GameObject loupeRoot;
 
     [Header("Loupe Camera Settings")]
     public float fovMin = 10f;           // strongest zoom
@@ -22,16 +23,31 @@ public class LoupeManager : MonoBehaviour
 
     [Header("Input (Magic Leap trackpad)")]
     public InputActionReference zoomInput; // Vector2, use Y as increment
+    public InputActionReference toggleInput;
+
     private float targetFOV;
+    private bool loupeEnabled = true;
 
     void OnEnable()
     {
         if (zoomInput != null) zoomInput.action.Enable();
+
+        if (toggleInput != null)
+        {
+            toggleInput.action.Enable();
+            toggleInput.action.performed += OnTogglePerformed;
+        }
     }
 
     void OnDisable()
     {
         if (zoomInput != null) zoomInput.action.Disable();
+
+        if (toggleInput != null)
+        {
+            toggleInput.action.performed -= OnTogglePerformed;
+            toggleInput.action.Disable();
+        }
     }
 
     void Start()
@@ -54,10 +70,16 @@ public class LoupeManager : MonoBehaviour
             targetFOV = Mathf.Clamp(loupeCamera.fieldOfView, fovMin, fovMax);
             loupeCamera.fieldOfView = targetFOV;
         }
+
+        // Initialize on/off state from current root active state (if provided)
+        loupeEnabled = loupeRoot ? loupeRoot.activeSelf : loupeEnabled;
+        SetLoupeEnabled(loupeEnabled);
     }
 
     void LateUpdate()
     {
+        if (!loupeEnabled) return;
+
         if (mainCamera == null || loupeCamera == null || loupeObject == null) return;
 
         // 1) Camera forward = casque -> loupe (regarder "au travers")
@@ -117,6 +139,33 @@ public class LoupeManager : MonoBehaviour
             float angleDeg = Vector3.SignedAngle(refUp, objUp, viewAxis);
             // Envoyer l'angle au shader (en radians). Le shader applique la rotation inverse.
             loupeRenderer.material.SetFloat("_AngleCorrection", angleDeg * Mathf.Deg2Rad);
+        }
+    }
+
+    // Toggle handlers
+    void OnTogglePerformed(InputAction.CallbackContext ctx)
+    {
+        ToggleLoupe();
+    }
+
+    public void ToggleLoupe()
+    {
+        SetLoupeEnabled(!loupeEnabled);
+    }
+
+    public void SetLoupeEnabled(bool enabled)
+    {
+        loupeEnabled = enabled;
+
+        if (loupeRoot != null)
+        {
+            loupeRoot.SetActive(enabled);
+        }
+        else
+        {
+            // Fallback if no root is provided
+            if (loupeRenderer != null) loupeRenderer.enabled = enabled;
+            if (loupeCamera != null) loupeCamera.enabled = enabled;
         }
     }
 }

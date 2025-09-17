@@ -734,6 +734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bac
       objectReference: {fileID: 0}
+    - target: {fileID: 1589186504890503549, guid: 3ba4ba22145e44dc885f4fe982745489, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2109439550511614919, guid: 3ba4ba22145e44dc885f4fe982745489, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.084692165

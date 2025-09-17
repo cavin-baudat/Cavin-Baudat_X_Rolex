@@ -23,8 +23,7 @@ MonoBehaviour:
   positionTolerance: 0.004
   rotationToleranceDeg: 10
   stableFramesRequired: 2
-  alternativeEulerOffsets:
-  - {x: 0, y: 0, z: 0}
+  alternativeEulerOffsets: []
   freeYaw: 0
   freePitch: 0
   freeRoll: 0

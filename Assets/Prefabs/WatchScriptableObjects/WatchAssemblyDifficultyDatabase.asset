@@ -1,0 +1,481 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e7ddbd19efc5b04daebc1fada5d0d69, type: 3}
+  m_Name: WatchAssemblyDifficultyDatabase
+  m_EditorClassIdentifier: 
+  entries:
+  - step: {fileID: 11400000, guid: 89f7956c426248c449741550d231bcbf, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.006
+      rotationToleranceDeg: 10
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.003
+      rotationToleranceDeg: 8
+      freeYaw: 0
+      freePitch: 0
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: 8de8533f6f5cee14f918f9cb8297d415, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 10
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.003
+      rotationToleranceDeg: 8
+      freeYaw: 0
+      freePitch: 0
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: e481529b457fbb445b821aa0aff20af4, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 10
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.002
+      rotationToleranceDeg: 6
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: 1a3a81d68226f3b4aba8eb6408190e9f, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 10
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.002
+      rotationToleranceDeg: 6
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: 8df710a57ee77a248bcb8695c03e3ddf, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 15
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.002
+      rotationToleranceDeg: 8
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: 90174ff69fbd4ae489f66d2c4641005d, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 10
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets:
+      - {x: 0, y: 180, z: 0}
+      - {x: 0, y: 0, z: 180}
+    hard:
+      positionTolerance: 0.002
+      rotationToleranceDeg: 6
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets:
+      - {x: 0, y: 180, z: 0}
+      - {x: 0, y: 0, z: 180}
+  - step: {fileID: 11400000, guid: 8860e06457c965c47887331b1667b21d, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 10
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.002
+      rotationToleranceDeg: 6
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: f0f1275252592ea4bb876dca49597fa1, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 10
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.002
+      rotationToleranceDeg: 6
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: 2e3900cded3910e46bb2fed3757618b9, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 10
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.002
+      rotationToleranceDeg: 6
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: d5f2c293e68bba74cae1a4f8f09328a9, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 10
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.003
+      rotationToleranceDeg: 8
+      freeYaw: 0
+      freePitch: 0
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: 760b1c0ebd3a60e4d820f49aa1193c75, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 10
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.002
+      rotationToleranceDeg: 6
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: 6c7b997b77f067847a7d7943ff646928, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 10
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.002
+      rotationToleranceDeg: 6
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: 9718de2097aa3d04da63102e7f08ae52, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 10
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.002
+      rotationToleranceDeg: 6
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: e6827540468403e44ae37575a2fc8f53, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 15
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.003
+      rotationToleranceDeg: 10
+      freeYaw: 0
+      freePitch: 0
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: 4679b7c667de88e4d98579d692d48489, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 10
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.002
+      rotationToleranceDeg: 6
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: 3d70a870f254bd249ab87548c3f2536c, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 10
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.003
+      rotationToleranceDeg: 8
+      freeYaw: 0
+      freePitch: 0
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: a3fde7c41cbdf1444b0adc450eb611c5, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 10
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.002
+      rotationToleranceDeg: 8
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: 7b02a8c902961aa47ae44bd1039b1783, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 10
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.002
+      rotationToleranceDeg: 6
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: 8869dd4c657b5ad4eb2648b3cc409a44, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 15
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.003
+      rotationToleranceDeg: 8
+      freeYaw: 0
+      freePitch: 0
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: e1b4e4c0ebe78ad48901775b3c2b56fc, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 15
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.003
+      rotationToleranceDeg: 8
+      freeYaw: 0
+      freePitch: 0
+      freeRoll: 0
+      alternativeEulerOffsets: []
+  - step: {fileID: 11400000, guid: a356a11eb87b66c4cbc0d98af1afdd36, type: 2}
+    easy:
+      positionTolerance: 0.012
+      rotationToleranceDeg: 10
+      freeYaw: 1
+      freePitch: 1
+      freeRoll: 1
+      alternativeEulerOffsets: []
+    normal:
+      positionTolerance: 0.004
+      rotationToleranceDeg: 15
+      freeYaw: 0
+      freePitch: 1
+      freeRoll: 0
+      alternativeEulerOffsets: []
+    hard:
+      positionTolerance: 0.003
+      rotationToleranceDeg: 8
+      freeYaw: 0
+      freePitch: 0
+      freeRoll: 0
+      alternativeEulerOffsets: []
